@@ -1,5 +1,5 @@
 {
-  "name": "erasys/dnode-php-sync-client",
+  "name": "dnode/dnode-php-sync-client",
   "type": "library",
   "description": "Minimalistic dnode client for PHP",
   "keywords": ["Erasys", "dnode", "PHP"],
