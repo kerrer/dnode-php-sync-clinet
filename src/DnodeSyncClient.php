@@ -4,7 +4,7 @@
  *
  * @copyright 2012 erasys GmbH - see ./LICENSE.txt for more info
  */
-namespace DnodeSyncClient;
+namespace DNodeSync;
 
 /**
  * Base class for all exceptions thrown by this library.
@@ -36,7 +36,7 @@ class ConnectionClosedException extends Exception {}
  *
  * This is the only class you should instantiate directly from your code.
  */
-class Dnode {
+class DnodeSyncClient {
 
   /**
    * Creates new dnode connection to given host and port
