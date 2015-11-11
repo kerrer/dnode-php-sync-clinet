@@ -148,7 +148,7 @@ class Connection {
 
     fwrite($this->stream, json_encode(array(
       'method' => $method,
-      'arguments' => $arguments,
+      'arguments' => array(json_encode($arguments)),
       'callbacks' => $callbacks,
     )) . "\n");
 
