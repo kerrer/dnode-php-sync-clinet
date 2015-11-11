@@ -177,12 +177,14 @@ class Connection {
       throw new ProtocolException("Response contains callbacks, we do not support that: $line");
     }
     if (!array_key_exists('arguments', $message)) {
-      return array();
+      return false;
     }
     if (!is_array($message['arguments'])) {
       throw new ProtocolException("Response arguments must be array: $line");
     }
-    return $message['arguments'];
+    
+    
+    return (isset($message['arguments'][0]) &&  $message['arguments'][0] )? $message['arguments'][0] : false;
   }
 
   /**
